@@ -1,0 +1,43 @@
+{
+  "name": "scl010-social-network",
+  "version": "1.0.0",
+  "description": "Social network project for Laboratoria cohort SCL010",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "jest --coverage",
+    "eslint": "eslint --ext .js src/ test/",
+    "htmlhint": "htmlhint src/*.html",
+    "pretest": "npm run eslint && npm run htmlhint",
+    "deploy": "gh-pages -d src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dacoquima/SCL010-Social-Network.git"
+  },
+  "keywords": [
+    "social",
+    "network",
+    "scl",
+    "010",
+    "imigrants",
+    "app"
+  ],
+  "author": "Laboratoria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dacoquima/SCL010-Social-Network/issues"
+  },
+  "homepage": "https://github.com/dacoquima/SCL010-Social-Network#readme",
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.8.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-jest": "^22.14.0",
+    "express": "^4.17.1",
+    "gh-pages": "^2.0.1",
+    "htmlhint": "^0.11.0",
+    "jest": "^24.8.0"
+  }
+}
