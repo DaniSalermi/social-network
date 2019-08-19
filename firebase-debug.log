@@ -349,3 +349,594 @@
 [debug] [2019-08-18T23:36:21.216Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
 [warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
 [info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-08-19T19:25:36.774Z] ----------------------------------------------------------------------
+[debug] [2019-08-19T19:25:36.776Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-08-19T19:25:36.777Z] CLI Version:   7.2.3
+[debug] [2019-08-19T19:25:36.777Z] Platform:      darwin
+[debug] [2019-08-19T19:25:36.777Z] Node Version:  v12.7.0
+[debug] [2019-08-19T19:25:36.778Z] Time:          Mon Aug 19 2019 15:25:36 GMT-0400 (GMT-04:00)
+[debug] [2019-08-19T19:25:36.778Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-19T19:25:36.796Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-19T19:25:36.796Z] > authorizing via signed-in user
+[debug] [2019-08-19T19:25:36.797Z] [iam] checking project social-network-72a7d for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2019-08-19T19:25:36.799Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-network-72a7d:testIamPermissions  
+
+[debug] [2019-08-19T19:25:38.088Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:25:38.093Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d  
+ 
+[debug] [2019-08-19T19:25:39.414Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'social-network-72a7d'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting
+[info] Running command: npm --prefix /Users/osx/Desktop/SCL010-Social-Network run eslint
+[info] ✔  functions: Finished running predeploy script.
+[info] i  database: checking rules syntax...
+[debug] [2019-08-19T19:25:42.359Z] >>> HTTP REQUEST PUT https://social-network-72a7d.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2019-08-19T19:25:45.252Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database social-network-72a7d is valid
+[debug] [2019-08-19T19:25:45.255Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/social-network-72a7d  
+ 
+[debug] [2019-08-19T19:25:46.684Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2019-08-19T19:25:46.688Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/social-network-72a7d:test  
+
+[debug] [2019-08-19T19:25:47.871Z] <<< HTTP RESPONSE 200
+[info] ✔  storage: rules file storage.rules compiled successfully
+[info] i  firestore: checking firestore.rules for compilation errors...
+[info] i  firestore: reading indexes from firestore.indexes.json...
+[debug] [2019-08-19T19:25:47.876Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/social-network-72a7d:test  
+
+[debug] [2019-08-19T19:25:48.936Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: rules file firestore.rules compiled successfully
+[debug] [2019-08-19T19:25:48.939Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2019-08-19T19:25:48.942Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/social-network-72a7d/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2019-08-19T19:25:48.943Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/social-network-72a7d/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2019-08-19T19:25:50.271Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:25:50.289Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2019-08-19T19:25:50.291Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/adminSdkConfig  
+ 
+[debug] [2019-08-19T19:25:51.499Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:25:51.501Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/social-network-72a7d/versions  
+
+[debug] [2019-08-19T19:25:52.725Z] <<< HTTP RESPONSE 500
+[debug] [2019-08-19T19:25:52.726Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-08-19T19:25:52.730Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Mon, 19 Aug 2019 19:25:52 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"46,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/social-network-72a7d/versions",
+        "path": "/v1beta1/sites/social-network-72a7d/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/social-network-72a7d/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2019-08-19T19:26:13.607Z] ----------------------------------------------------------------------
+[debug] [2019-08-19T19:26:13.609Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-08-19T19:26:13.609Z] CLI Version:   7.2.3
+[debug] [2019-08-19T19:26:13.609Z] Platform:      darwin
+[debug] [2019-08-19T19:26:13.609Z] Node Version:  v12.7.0
+[debug] [2019-08-19T19:26:13.610Z] Time:          Mon Aug 19 2019 15:26:13 GMT-0400 (GMT-04:00)
+[debug] [2019-08-19T19:26:13.610Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-19T19:26:13.620Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-19T19:26:13.621Z] > authorizing via signed-in user
+[debug] [2019-08-19T19:26:13.621Z] [iam] checking project social-network-72a7d for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2019-08-19T19:26:13.623Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-network-72a7d:testIamPermissions  
+
+[debug] [2019-08-19T19:26:14.748Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:26:14.752Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d  
+ 
+[debug] [2019-08-19T19:26:15.971Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'social-network-72a7d'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting
+[info] Running command: npm --prefix /Users/osx/Desktop/SCL010-Social-Network run eslint
+[info] ✔  functions: Finished running predeploy script.
+[info] i  database: checking rules syntax...
+[debug] [2019-08-19T19:26:19.569Z] >>> HTTP REQUEST PUT https://social-network-72a7d.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2019-08-19T19:26:20.386Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database social-network-72a7d is valid
+[debug] [2019-08-19T19:26:20.391Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/social-network-72a7d  
+ 
+[debug] [2019-08-19T19:26:21.569Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2019-08-19T19:26:21.572Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/social-network-72a7d:test  
+
+[debug] [2019-08-19T19:26:22.628Z] <<< HTTP RESPONSE 200
+[info] ✔  storage: rules file storage.rules compiled successfully
+[info] i  firestore: checking firestore.rules for compilation errors...
+[info] i  firestore: reading indexes from firestore.indexes.json...
+[debug] [2019-08-19T19:26:22.635Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/social-network-72a7d:test  
+
+[debug] [2019-08-19T19:26:23.643Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: rules file firestore.rules compiled successfully
+[debug] [2019-08-19T19:26:23.648Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2019-08-19T19:26:23.651Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/social-network-72a7d/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2019-08-19T19:26:23.652Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/social-network-72a7d/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2019-08-19T19:26:24.755Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:26:24.847Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2019-08-19T19:26:24.850Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/adminSdkConfig  
+ 
+[debug] [2019-08-19T19:26:26.006Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:26:26.009Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/social-network-72a7d/versions  
+
+[debug] [2019-08-19T19:26:27.542Z] <<< HTTP RESPONSE 200
+[info] i  storage: uploading rules storage.rules...
+[debug] [2019-08-19T19:26:27.548Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/social-network-72a7d/rulesets  
+
+[debug] [2019-08-19T19:26:28.771Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:26:28.771Z] [rules] created ruleset projects/social-network-72a7d/rulesets/062c8e40-4dff-4033-9a6b-b189f2b084bb
+[info] i  firestore: uploading rules firestore.rules...
+[debug] [2019-08-19T19:26:28.774Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/social-network-72a7d/rulesets  
+
+[debug] [2019-08-19T19:26:28.775Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/social-network-72a7d/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2019-08-19T19:26:29.950Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:26:29.951Z] [rules] created ruleset projects/social-network-72a7d/rulesets/47518deb-aea6-42e2-83ee-ec79d3a796c2
+[debug] [2019-08-19T19:26:30.029Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:26:30.030Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/social-network-72a7d/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2019-08-19T19:26:31.128Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: deployed indexes in firestore.indexes.json successfully
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2019-08-19T19:26:31.134Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/social-network-72a7d/configs  
+ 
+[debug] [2019-08-19T19:26:31.638Z] <<< HTTP RESPONSE 200
+[info] i  hosting[social-network-72a7d]: beginning deploy...
+[info] i  hosting[social-network-72a7d]: found 60 files in src
+[debug] [2019-08-19T19:26:31.835Z] [hosting] hash cache [c3Jj] load error: lines is not defined
+[debug] [2019-08-19T19:26:32.056Z] [hosting] hash cache [c3Jj] stored for 60 files
+[debug] [2019-08-19T19:26:32.057Z] [hosting][hash queue][FINAL]
+[debug] [2019-08-19T19:26:32.057Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/social-network-72a7d/versions/dff388638e34a1a0:populateFiles  
+ <request body omitted>
+[debug] [2019-08-19T19:26:33.830Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:26:33.874Z] [hosting][populate queue][FINAL]
+[debug] [2019-08-19T19:26:33.874Z] [hosting] uploads queued: 56
+[debug] [2019-08-19T19:26:38.342Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[social-network-72a7d]: file upload complete
+[debug] [2019-08-19T19:26:38.346Z] [hosting] deploy completed after 6538ms
+[info] i  database: releasing rules...
+[debug] [2019-08-19T19:26:38.357Z] >>> HTTP REQUEST PUT https://social-network-72a7d.firebaseio.com/.settings/rules.json  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2019-08-19T19:26:39.121Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules for database social-network-72a7d released successfully
+[debug] [2019-08-19T19:26:39.123Z] [rules] releasing firebase.storage/social-network-72a7d.appspot.com with ruleset projects/social-network-72a7d/rulesets/062c8e40-4dff-4033-9a6b-b189f2b084bb
+[debug] [2019-08-19T19:26:39.124Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/social-network-72a7d/releases/firebase.storage/social-network-72a7d.appspot.com  
+
+[debug] [2019-08-19T19:26:40.295Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:26:40.295Z] [rules] updated release projects/social-network-72a7d/releases/firebase.storage/social-network-72a7d.appspot.com
+[info] ✔  storage: released rules storage.rules to firebase.storage/social-network-72a7d.appspot.com
+[debug] [2019-08-19T19:26:40.296Z] [rules] releasing cloud.firestore with ruleset projects/social-network-72a7d/rulesets/47518deb-aea6-42e2-83ee-ec79d3a796c2
+[debug] [2019-08-19T19:26:40.296Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/social-network-72a7d/releases/cloud.firestore  
+
+[debug] [2019-08-19T19:26:41.571Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:26:41.571Z] [rules] updated release projects/social-network-72a7d/releases/cloud.firestore
+[info] ✔  firestore: released rules firestore.rules to cloud.firestore
+[debug] [2019-08-19T19:26:41.574Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/social-network-72a7d/locations/-/functions  
+ 
+[debug] [2019-08-19T19:26:42.934Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:26:42.940Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/social-network-72a7d/services/cloudscheduler.googleapis.com  
+ 
+[debug] [2019-08-19T19:26:44.135Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:26:44.140Z] [
+  {
+    "config": {
+      "public": "src",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "social-network-72a7d"
+    },
+    "site": "social-network-72a7d",
+    "version": "sites/social-network-72a7d/versions/dff388638e34a1a0"
+  }
+]
+[info] i  hosting[social-network-72a7d]: finalizing version...
+[debug] [2019-08-19T19:26:44.144Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/social-network-72a7d/versions/dff388638e34a1a0?updateMask=status  
+
+[debug] [2019-08-19T19:26:45.222Z] <<< HTTP RESPONSE 500
+[debug] [2019-08-19T19:26:45.222Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-08-19T19:26:45.230Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Mon, 19 Aug 2019 19:26:45 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"46,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": "?updateMask=status",
+        "query": "updateMask=status",
+        "pathname": "/v1beta1/sites/social-network-72a7d/versions/dff388638e34a1a0",
+        "path": "/v1beta1/sites/social-network-72a7d/versions/dff388638e34a1a0?updateMask=status",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/social-network-72a7d/versions/dff388638e34a1a0?updateMask=status"
+      },
+      "method": "PATCH"
+    }
+  }
+}
+[debug] [2019-08-19T19:28:33.720Z] ----------------------------------------------------------------------
+[debug] [2019-08-19T19:28:33.723Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-08-19T19:28:33.724Z] CLI Version:   7.2.3
+[debug] [2019-08-19T19:28:33.724Z] Platform:      darwin
+[debug] [2019-08-19T19:28:33.724Z] Node Version:  v12.7.0
+[debug] [2019-08-19T19:28:33.725Z] Time:          Mon Aug 19 2019 15:28:33 GMT-0400 (GMT-04:00)
+[debug] [2019-08-19T19:28:33.725Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-19T19:28:33.735Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-19T19:28:33.736Z] > authorizing via signed-in user
+[debug] [2019-08-19T19:28:33.736Z] [iam] checking project social-network-72a7d for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2019-08-19T19:28:33.740Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-19T19:28:33.741Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-19T19:28:33.982Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:28:34.024Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-network-72a7d:testIamPermissions  
+
+[debug] [2019-08-19T19:28:35.138Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:28:35.144Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d  
+ 
+[debug] [2019-08-19T19:28:36.279Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'social-network-72a7d'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting
+[info] Running command: npm --prefix /Users/osx/Desktop/SCL010-Social-Network run eslint
+[info] ✔  functions: Finished running predeploy script.
+[info] i  database: checking rules syntax...
+[debug] [2019-08-19T19:28:39.291Z] >>> HTTP REQUEST PUT https://social-network-72a7d.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2019-08-19T19:28:40.126Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database social-network-72a7d is valid
+[debug] [2019-08-19T19:28:40.129Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/social-network-72a7d  
+ 
+[debug] [2019-08-19T19:28:41.407Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2019-08-19T19:28:41.410Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/social-network-72a7d:test  
+
+[debug] [2019-08-19T19:28:42.509Z] <<< HTTP RESPONSE 200
+[info] ✔  storage: rules file storage.rules compiled successfully
+[info] i  firestore: checking firestore.rules for compilation errors...
+[info] i  firestore: reading indexes from firestore.indexes.json...
+[debug] [2019-08-19T19:28:42.516Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/social-network-72a7d:test  
+
+[debug] [2019-08-19T19:28:43.635Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: rules file firestore.rules compiled successfully
+[debug] [2019-08-19T19:28:43.637Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2019-08-19T19:28:43.638Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/social-network-72a7d/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2019-08-19T19:28:43.638Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/social-network-72a7d/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2019-08-19T19:28:44.865Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:28:44.890Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2019-08-19T19:28:44.891Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/adminSdkConfig  
+ 
+[debug] [2019-08-19T19:28:46.092Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:28:46.095Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/social-network-72a7d/versions  
+
+[debug] [2019-08-19T19:28:47.749Z] <<< HTTP RESPONSE 200
+[info] i  storage: uploading rules storage.rules...
+[debug] [2019-08-19T19:28:47.752Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/social-network-72a7d/rulesets  
+
+[debug] [2019-08-19T19:28:48.945Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:28:48.946Z] [rules] created ruleset projects/social-network-72a7d/rulesets/b8cd049e-cafc-4df1-b460-b6add40ffff8
+[info] i  firestore: uploading rules firestore.rules...
+[debug] [2019-08-19T19:28:48.947Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/social-network-72a7d/rulesets  
+
+[debug] [2019-08-19T19:28:48.948Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/social-network-72a7d/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2019-08-19T19:28:50.189Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:28:50.190Z] [rules] created ruleset projects/social-network-72a7d/rulesets/6e272707-3a81-41d5-b9bb-dc170af69514
+[debug] [2019-08-19T19:28:50.191Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:28:50.192Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/social-network-72a7d/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2019-08-19T19:28:54.420Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: deployed indexes in firestore.indexes.json successfully
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2019-08-19T19:28:54.427Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/social-network-72a7d/configs  
+ 
+[debug] [2019-08-19T19:28:55.719Z] <<< HTTP RESPONSE 200
+[info] i  hosting[social-network-72a7d]: beginning deploy...
+[info] i  hosting[social-network-72a7d]: found 60 files in src
+[debug] [2019-08-19T19:28:55.934Z] [hosting] hash cache [c3Jj] load error: lines is not defined
+[debug] [2019-08-19T19:28:56.145Z] [hosting] hash cache [c3Jj] stored for 60 files
+[debug] [2019-08-19T19:28:56.146Z] [hosting][hash queue][FINAL]
+[debug] [2019-08-19T19:28:56.146Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/social-network-72a7d/versions/571ba3dd7b23e9cd:populateFiles  
+ <request body omitted>
+[debug] [2019-08-19T19:28:57.248Z] <<< HTTP RESPONSE 500
+[debug] [2019-08-19T19:28:57.248Z] <<< HTTP RESPONSE BODY
+[debug] [2019-08-19T19:28:57.652Z] [populateQueue] Retrying task index 0
+[debug] [2019-08-19T19:28:57.653Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/social-network-72a7d/versions/571ba3dd7b23e9cd:populateFiles  
+ <request body omitted>
+[debug] [2019-08-19T19:28:58.742Z] <<< HTTP RESPONSE 500
+[debug] [2019-08-19T19:28:58.743Z] <<< HTTP RESPONSE BODY
+[debug] [2019-08-19T19:28:59.547Z] [populateQueue] Retrying task index 0
+[debug] [2019-08-19T19:28:59.547Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/social-network-72a7d/versions/571ba3dd7b23e9cd:populateFiles  
+ <request body omitted>
+[debug] [2019-08-19T19:29:00.582Z] <<< HTTP RESPONSE 500
+[debug] [2019-08-19T19:29:00.582Z] <<< HTTP RESPONSE BODY
+[debug] [2019-08-19T19:29:02.188Z] [populateQueue] Retrying task index 0
+[debug] [2019-08-19T19:29:02.189Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/social-network-72a7d/versions/571ba3dd7b23e9cd:populateFiles  
+ <request body omitted>
+[debug] [2019-08-19T19:29:04.321Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:29:04.323Z] [hosting][populate queue][FINAL]
+[debug] [2019-08-19T19:29:04.323Z] [hosting] uploads queued: 0
+[debug] [2019-08-19T19:29:04.324Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[social-network-72a7d]: file upload complete
+[debug] [2019-08-19T19:29:04.325Z] [hosting] deploy completed after 8417ms
+[info] i  database: releasing rules...
+[debug] [2019-08-19T19:29:04.329Z] >>> HTTP REQUEST PUT https://social-network-72a7d.firebaseio.com/.settings/rules.json  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2019-08-19T19:29:05.344Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules for database social-network-72a7d released successfully
+[debug] [2019-08-19T19:29:05.347Z] [rules] releasing firebase.storage/social-network-72a7d.appspot.com with ruleset projects/social-network-72a7d/rulesets/b8cd049e-cafc-4df1-b460-b6add40ffff8
+[debug] [2019-08-19T19:29:05.348Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/social-network-72a7d/releases/firebase.storage/social-network-72a7d.appspot.com  
+
+[debug] [2019-08-19T19:29:06.541Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:29:06.542Z] [rules] updated release projects/social-network-72a7d/releases/firebase.storage/social-network-72a7d.appspot.com
+[info] ✔  storage: released rules storage.rules to firebase.storage/social-network-72a7d.appspot.com
+[debug] [2019-08-19T19:29:06.543Z] [rules] releasing cloud.firestore with ruleset projects/social-network-72a7d/rulesets/6e272707-3a81-41d5-b9bb-dc170af69514
+[debug] [2019-08-19T19:29:06.543Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/social-network-72a7d/releases/cloud.firestore  
+
+[debug] [2019-08-19T19:29:07.802Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:29:07.802Z] [rules] updated release projects/social-network-72a7d/releases/cloud.firestore
+[info] ✔  firestore: released rules firestore.rules to cloud.firestore
+[debug] [2019-08-19T19:29:07.806Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/social-network-72a7d/locations/-/functions  
+ 
+[debug] [2019-08-19T19:29:08.314Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:29:08.319Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/social-network-72a7d/services/cloudscheduler.googleapis.com  
+ 
+[debug] [2019-08-19T19:29:09.543Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-19T19:29:09.546Z] [
+  {
+    "config": {
+      "public": "src",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "social-network-72a7d"
+    },
+    "site": "social-network-72a7d",
+    "version": "sites/social-network-72a7d/versions/571ba3dd7b23e9cd"
+  }
+]
+[info] i  hosting[social-network-72a7d]: finalizing version...
+[debug] [2019-08-19T19:29:09.546Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/social-network-72a7d/versions/571ba3dd7b23e9cd?updateMask=status  
+
+[debug] [2019-08-19T19:29:10.603Z] <<< HTTP RESPONSE 500
+[debug] [2019-08-19T19:29:10.603Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-08-19T19:29:10.607Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Mon, 19 Aug 2019 19:29:10 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"46,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": "?updateMask=status",
+        "query": "updateMask=status",
+        "pathname": "/v1beta1/sites/social-network-72a7d/versions/571ba3dd7b23e9cd",
+        "path": "/v1beta1/sites/social-network-72a7d/versions/571ba3dd7b23e9cd?updateMask=status",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/social-network-72a7d/versions/571ba3dd7b23e9cd?updateMask=status"
+      },
+      "method": "PATCH"
+    }
+  }
+}
