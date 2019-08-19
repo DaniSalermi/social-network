@@ -563,3 +563,15 @@ a {
 .tittlePost {
   padding-top: 80px;
 }
+.space {
+  padding-bottom: 100px;
+}
+.space2 {
+  padding-bottom: 80px;
+}
+.categoryButtons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
