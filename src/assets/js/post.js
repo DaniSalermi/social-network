@@ -1,6 +1,4 @@
-import {
-  observer
-} from "./auth.js";
+import { observer } from "./auth.js";
 
 const containerFeedPost = document.getElementById("root2");
 let date = new Date();
@@ -26,11 +24,11 @@ export const createPost = () => {
           message: postMesage,
           like: []
         })
-        .then(function (doc) {
+        .then(function(doc) {
           window.location.hash = "#/feed";
           readPost();
         })
-        .catch(function (error) {
+        .catch(function(error) {
           console.error("Error adding document: ", error);
         });
     } else {
@@ -53,7 +51,9 @@ export const readPost = () => {
               <div class = "perfil">
               <div class = "avatarPost">
                 <img src=${
-                  doc.data().photo ? doc.data().photo : "/assets/img/person.svg"
+                  doc.data().photo
+                    ? doc.data().photo
+                    : "./assets/img/person.svg"
                 } alt="avatar user"/>
               </div>
               <div>
@@ -152,11 +152,11 @@ export const deletePost = id => {
     db.collection("posts")
       .doc(id)
       .delete()
-      .then(function () {
+      .then(function() {
         containerFeedPost.innerHTML = "";
         readPost();
       })
-      .catch(function (error) {
+      .catch(function(error) {
         console.error("Error removing document: ", error);
       });
   }
