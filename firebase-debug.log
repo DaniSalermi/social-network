@@ -1,0 +1,351 @@
+[debug] [2019-08-14T19:46:35.309Z] ----------------------------------------------------------------------
+[debug] [2019-08-14T19:46:35.311Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\carol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-08-14T19:46:35.312Z] CLI Version:   7.2.2
+[debug] [2019-08-14T19:46:35.312Z] Platform:      win32
+[debug] [2019-08-14T19:46:35.312Z] Node Version:  v10.16.0
+[debug] [2019-08-14T19:46:35.312Z] Time:          Wed Aug 14 2019 15:46:35 GMT-0400 (GMT-04:00)
+[debug] [2019-08-14T19:46:35.313Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-14T19:46:35.330Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-14T19:46:35.331Z] > authorizing via signed-in user
+[debug] [2019-08-14T19:46:35.331Z] [iam] checking project social-network-72a7d for permissions ["firebase.projects.get"]
+[debug] [2019-08-14T19:46:35.332Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-14T19:46:35.332Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-14T19:46:35.583Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-14T19:46:35.597Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-network-72a7d:testIamPermissions  
+
+[debug] [2019-08-14T19:46:37.045Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-14T19:46:37.050Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d  
+ 
+[debug] [2019-08-14T19:46:38.404Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network'...
+[info] 
+[debug] [2019-08-14T19:46:38.420Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-08-14T19:46:38.443Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/adminSdkConfig  
+ 
+[debug] [2019-08-14T19:46:39.670Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-14T19:46:39.725Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network\functions" for Cloud Functions...
+[debug] [2019-08-14T19:46:40.368Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\carol\\OneDrive\\Área de Trabalho\\GitDescarga\\SCL010-Social-Network\\functions","node_version":"10.16.0"}
+[debug] [2019-08-14T19:46:40.369Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[warn] !  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-08-16T22:03:54.009Z] ----------------------------------------------------------------------
+[debug] [2019-08-16T22:03:54.011Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\carol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-08-16T22:03:54.011Z] CLI Version:   7.2.2
+[debug] [2019-08-16T22:03:54.011Z] Platform:      win32
+[debug] [2019-08-16T22:03:54.011Z] Node Version:  v10.16.0
+[debug] [2019-08-16T22:03:54.012Z] Time:          Fri Aug 16 2019 18:03:54 GMT-0400 (GMT-04:00)
+[debug] [2019-08-16T22:03:54.012Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-16T22:03:54.025Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-16T22:03:54.026Z] > authorizing via signed-in user
+[debug] [2019-08-16T22:03:54.026Z] [iam] checking project social-network-72a7d for permissions ["firebase.projects.get"]
+[debug] [2019-08-16T22:03:54.028Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-16T22:03:54.028Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-16T22:03:54.124Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-16T22:03:54.129Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-network-72a7d:testIamPermissions  
+
+[debug] [2019-08-16T22:03:55.187Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-16T22:03:55.189Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d  
+ 
+[debug] [2019-08-16T22:03:56.325Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network'...
+[info] 
+[debug] [2019-08-16T22:03:56.337Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-08-16T22:03:56.355Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/adminSdkConfig  
+ 
+[debug] [2019-08-16T22:03:57.412Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-16T22:03:57.487Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network\functions" for Cloud Functions...
+[debug] [2019-08-16T22:03:58.105Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\carol\\OneDrive\\Área de Trabalho\\GitDescarga\\SCL010-Social-Network\\functions","node_version":"10.16.0"}
+[debug] [2019-08-16T22:03:58.105Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[warn] !  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-08-17T20:46:12.030Z] ----------------------------------------------------------------------
+[debug] [2019-08-17T20:46:12.032Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-08-17T20:46:12.032Z] CLI Version:   7.2.2
+[debug] [2019-08-17T20:46:12.032Z] Platform:      darwin
+[debug] [2019-08-17T20:46:12.032Z] Node Version:  v12.7.0
+[debug] [2019-08-17T20:46:12.041Z] Time:          Sat Aug 17 2019 16:46:12 GMT-0400 (GMT-04:00)
+[debug] [2019-08-17T20:46:12.041Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-17T20:46:12.055Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-17T20:46:12.055Z] > authorizing via signed-in user
+[debug] [2019-08-17T20:46:12.055Z] [iam] checking project social-network-72a7d for permissions ["firebase.projects.get"]
+[debug] [2019-08-17T20:46:12.057Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-17T20:46:12.057Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-17T20:46:12.188Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T20:46:12.237Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-network-72a7d:testIamPermissions  
+
+[debug] [2019-08-17T20:46:13.279Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T20:46:13.281Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d  
+ 
+[debug] [2019-08-17T20:46:14.442Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/osx/Desktop/SCL010-Social-Network'...
+[info] 
+[debug] [2019-08-17T20:46:14.452Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[debug] [2019-08-17T20:46:14.481Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/adminSdkConfig  
+ 
+[debug] [2019-08-17T20:46:14.843Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2019-08-17T20:46:15.832Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/osx/Desktop/SCL010-Social-Network/functions" for Cloud Functions...
+[info] i  hosting: Serving hosting files from: src
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-08-17T20:46:16.197Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/osx/Desktop/SCL010-Social-Network/functions","node_version":"12.7.0"}
+[debug] [2019-08-17T20:46:16.198Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-08-17T15:00:56.317Z] ----------------------------------------------------------------------
+[debug] [2019-08-17T15:00:56.319Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\carol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-08-17T15:00:56.320Z] CLI Version:   7.2.2
+[debug] [2019-08-17T15:00:56.320Z] Platform:      win32
+[debug] [2019-08-17T15:00:56.320Z] Node Version:  v10.16.0
+[debug] [2019-08-17T15:00:56.326Z] Time:          Sat Aug 17 2019 11:00:56 GMT-0400 (GMT-04:00)
+[debug] [2019-08-17T15:00:56.326Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-17T15:00:56.337Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-17T15:00:56.337Z] > authorizing via signed-in user
+[debug] [2019-08-17T15:00:56.337Z] [iam] checking project social-network-72a7d for permissions ["firebase.projects.get"]
+[debug] [2019-08-17T15:00:56.338Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-17T15:00:56.338Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-17T15:00:56.561Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T15:00:56.574Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-network-72a7d:testIamPermissions  
+
+[debug] [2019-08-17T15:00:57.652Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T15:00:57.653Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d  
+ 
+[debug] [2019-08-17T15:00:58.843Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network'...
+[info] 
+[debug] [2019-08-17T15:00:58.857Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-08-17T15:00:58.870Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/adminSdkConfig  
+ 
+[debug] [2019-08-17T15:01:00.032Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T15:01:00.078Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network\functions" for Cloud Functions...
+[debug] [2019-08-17T15:01:00.717Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\carol\\OneDrive\\Área de Trabalho\\GitDescarga\\SCL010-Social-Network\\functions","node_version":"10.16.0"}
+[debug] [2019-08-17T15:01:00.717Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[warn] !  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-08-17T16:08:32.474Z] ----------------------------------------------------------------------
+[debug] [2019-08-17T16:08:32.476Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\carol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-08-17T16:08:32.476Z] CLI Version:   7.2.2
+[debug] [2019-08-17T16:08:32.476Z] Platform:      win32
+[debug] [2019-08-17T16:08:32.476Z] Node Version:  v10.16.0
+[debug] [2019-08-17T16:08:32.482Z] Time:          Sat Aug 17 2019 12:08:32 GMT-0400 (GMT-04:00)
+[debug] [2019-08-17T16:08:32.483Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-17T16:08:32.491Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-17T16:08:32.492Z] > authorizing via signed-in user
+[debug] [2019-08-17T16:08:32.492Z] [iam] checking project social-network-72a7d for permissions ["firebase.projects.get"]
+[debug] [2019-08-17T16:08:32.493Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-17T16:08:32.493Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-17T16:08:32.656Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T16:08:32.661Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-network-72a7d:testIamPermissions  
+
+[debug] [2019-08-17T16:08:33.704Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T16:08:33.705Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d  
+ 
+[debug] [2019-08-17T16:08:34.915Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network'...
+[info] 
+[debug] [2019-08-17T16:08:34.933Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-08-17T16:08:34.953Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/adminSdkConfig  
+ 
+[debug] [2019-08-17T16:08:36.075Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T16:08:36.148Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network\functions" for Cloud Functions...
+[debug] [2019-08-17T16:08:36.800Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\carol\\OneDrive\\Área de Trabalho\\GitDescarga\\SCL010-Social-Network\\functions","node_version":"10.16.0"}
+[debug] [2019-08-17T16:08:36.800Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[warn] !  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-08-17T15:00:56.317Z] ----------------------------------------------------------------------
+[debug] [2019-08-17T15:00:56.319Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\carol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-08-17T15:00:56.320Z] CLI Version:   7.2.2
+[debug] [2019-08-17T15:00:56.320Z] Platform:      win32
+[debug] [2019-08-17T15:00:56.320Z] Node Version:  v10.16.0
+[debug] [2019-08-17T15:00:56.326Z] Time:          Sat Aug 17 2019 11:00:56 GMT-0400 (GMT-04:00)
+[debug] [2019-08-17T15:00:56.326Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-17T15:00:56.337Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-17T15:00:56.337Z] > authorizing via signed-in user
+[debug] [2019-08-17T15:00:56.337Z] [iam] checking project social-network-72a7d for permissions ["firebase.projects.get"]
+[debug] [2019-08-17T15:00:56.338Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-17T15:00:56.338Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-17T15:00:56.561Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T15:00:56.574Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-network-72a7d:testIamPermissions  
+
+[debug] [2019-08-17T15:00:57.652Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T15:00:57.653Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d  
+ 
+[debug] [2019-08-17T15:00:58.843Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network'...
+[info] 
+[debug] [2019-08-17T15:00:58.857Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-08-17T15:00:58.870Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/adminSdkConfig  
+ 
+[debug] [2019-08-17T15:01:00.032Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T15:01:00.078Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network\functions" for Cloud Functions...
+[debug] [2019-08-17T15:01:00.717Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\carol\\OneDrive\\Área de Trabalho\\GitDescarga\\SCL010-Social-Network\\functions","node_version":"10.16.0"}
+[debug] [2019-08-17T15:01:00.717Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[warn] !  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-08-17T16:08:32.474Z] ----------------------------------------------------------------------
+[debug] [2019-08-17T16:08:32.476Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\carol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-08-17T16:08:32.476Z] CLI Version:   7.2.2
+[debug] [2019-08-17T16:08:32.476Z] Platform:      win32
+[debug] [2019-08-17T16:08:32.476Z] Node Version:  v10.16.0
+[debug] [2019-08-17T16:08:32.482Z] Time:          Sat Aug 17 2019 12:08:32 GMT-0400 (GMT-04:00)
+[debug] [2019-08-17T16:08:32.483Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-17T16:08:32.491Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-17T16:08:32.492Z] > authorizing via signed-in user
+[debug] [2019-08-17T16:08:32.492Z] [iam] checking project social-network-72a7d for permissions ["firebase.projects.get"]
+[debug] [2019-08-17T16:08:32.493Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-17T16:08:32.493Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-17T16:08:32.656Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T16:08:32.661Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-network-72a7d:testIamPermissions  
+
+[debug] [2019-08-17T16:08:33.704Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T16:08:33.705Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d  
+ 
+[debug] [2019-08-17T16:08:34.915Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network'...
+[info] 
+[debug] [2019-08-17T16:08:34.933Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-08-17T16:08:34.953Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/adminSdkConfig  
+ 
+[debug] [2019-08-17T16:08:36.075Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-17T16:08:36.148Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network\functions" for Cloud Functions...
+[debug] [2019-08-17T16:08:36.800Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\carol\\OneDrive\\Área de Trabalho\\GitDescarga\\SCL010-Social-Network\\functions","node_version":"10.16.0"}
+[debug] [2019-08-17T16:08:36.800Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[warn] !  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-08-18T19:55:55.967Z] ----------------------------------------------------------------------
+[debug] [2019-08-18T19:55:55.969Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\carol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-08-18T19:55:55.969Z] CLI Version:   7.2.2
+[debug] [2019-08-18T19:55:55.969Z] Platform:      win32
+[debug] [2019-08-18T19:55:55.969Z] Node Version:  v10.16.0
+[debug] [2019-08-18T19:55:55.970Z] Time:          Sun Aug 18 2019 15:55:55 GMT-0400 (GMT-04:00)
+[debug] [2019-08-18T19:55:55.970Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-18T19:55:55.986Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-18T19:55:55.987Z] > authorizing via signed-in user
+[debug] [2019-08-18T19:55:55.987Z] [iam] checking project social-network-72a7d for permissions ["firebase.projects.get"]
+[debug] [2019-08-18T19:55:55.988Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-18T19:55:55.989Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-18T19:55:57.266Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-18T19:55:57.271Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-network-72a7d:testIamPermissions  
+
+[debug] [2019-08-18T19:55:58.377Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-18T19:55:58.378Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d  
+ 
+[debug] [2019-08-18T19:55:59.653Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network'...
+[info] 
+[debug] [2019-08-18T19:55:59.658Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-08-18T19:55:59.670Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/adminSdkConfig  
+ 
+[debug] [2019-08-18T19:56:00.820Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-18T19:56:00.872Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\carol\OneDrive\Área de Trabalho\GitDescarga\SCL010-Social-Network\functions" for Cloud Functions...
+[debug] [2019-08-18T19:56:01.712Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\carol\\OneDrive\\Área de Trabalho\\GitDescarga\\SCL010-Social-Network\\functions","node_version":"10.16.0"}
+[debug] [2019-08-18T19:56:01.712Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[warn] !  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-08-18T23:36:17.664Z] ----------------------------------------------------------------------
+[debug] [2019-08-18T23:36:17.667Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-08-18T23:36:17.668Z] CLI Version:   7.2.2
+[debug] [2019-08-18T23:36:17.668Z] Platform:      darwin
+[debug] [2019-08-18T23:36:17.668Z] Node Version:  v12.7.0
+[debug] [2019-08-18T23:36:17.678Z] Time:          Sun Aug 18 2019 19:36:17 GMT-0400 (GMT-04:00)
+[debug] [2019-08-18T23:36:17.678Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-18T23:36:17.692Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-18T23:36:17.692Z] > authorizing via signed-in user
+[debug] [2019-08-18T23:36:17.693Z] [iam] checking project social-network-72a7d for permissions ["firebase.projects.get"]
+[debug] [2019-08-18T23:36:17.694Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-18T23:36:17.695Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-18T23:36:17.868Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-18T23:36:17.912Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-network-72a7d:testIamPermissions  
+
+[debug] [2019-08-18T23:36:19.003Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-18T23:36:19.005Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d  
+ 
+[debug] [2019-08-18T23:36:19.464Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/osx/Desktop/SCL010-Social-Network'...
+[info] 
+[debug] [2019-08-18T23:36:19.472Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[debug] [2019-08-18T23:36:19.493Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d/adminSdkConfig  
+ 
+[debug] [2019-08-18T23:36:20.639Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-18T23:36:20.758Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] ✔  hosting: Local server: http://localhost:5000
+[info] ✔  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/osx/Desktop/SCL010-Social-Network/functions" for Cloud Functions...
+[debug] [2019-08-18T23:36:21.215Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/osx/Desktop/SCL010-Social-Network/functions","node_version":"12.7.0"}
+[debug] [2019-08-18T23:36:21.216Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)

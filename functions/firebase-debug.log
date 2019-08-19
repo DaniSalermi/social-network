@@ -1,0 +1,22 @@
+[debug] [2019-08-05T02:37:02.289Z] ----------------------------------------------------------------------
+[debug] [2019-08-05T02:37:02.291Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-08-05T02:37:02.291Z] CLI Version:   7.2.2
+[debug] [2019-08-05T02:37:02.292Z] Platform:      darwin
+[debug] [2019-08-05T02:37:02.292Z] Node Version:  v12.7.0
+[debug] [2019-08-05T02:37:02.293Z] Time:          Sun Aug 04 2019 22:37:02 GMT-0400 (GMT-04:00)
+[debug] [2019-08-05T02:37:02.293Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-05T02:37:02.304Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-05T02:37:02.304Z] > authorizing via signed-in user
+[debug] [2019-08-05T02:37:02.305Z] [iam] checking project social-network-72a7d for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2019-08-05T02:37:02.306Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-network-72a7d:testIamPermissions  
+
+[debug] [2019-08-05T02:37:03.442Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-05T02:37:03.447Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-network-72a7d  
+ 
+[debug] [2019-08-05T02:37:04.612Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'social-network-72a7d'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting
+[info] Running command: npm --prefix /Users/osx/Desktop/SCL010-Social-Network run eslint

@@ -1,0 +1,565 @@
+:root {
+  --principalBlue: #2e71a7;
+  --mustardYellow: #eda247;
+  --babyBlue: #c4d9ec;
+  --black: #272727;
+  --lightGrey: #f4f4f4;
+}
+
+body {
+  background: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+button {
+  border: 0;
+}
+
+input {
+  background: inherit;
+  box-shadow: none;
+}
+
+h1 {
+  color: var(--mustardYellow);
+  font-size: 22px;
+}
+
+::placeholder {
+  color: var(--principalBlue);
+}
+
+h2 {
+  color: var(--mustardYellow);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 95%;
+  text-align: center;
+  color: var(--principalBlue);
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  color: var(--principalBlue);
+  text-decoration: none;
+}
+
+.principalHeader {
+  margin-bottom: 20px;
+}
+
+.secondaryText {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.actionButtonRegular {
+  background-color: var(--principalBlue);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  padding: 10px 0px;
+  max-width: 268px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  justify-content: center;
+}
+
+.signInGoogleFacebookButton {
+  background-color: #f4f4f4;
+  color: var(--black);
+  border-radius: 20px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  padding: 10px 0;
+  max-width: 268px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.signInGoogleFacebookButton img {
+  margin-right: 8px;
+}
+
+.imgFirstHeader {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mainLoginCreate {
+  padding: 0 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.createAccountLoginFormulary {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.inputFormulary {
+  border: none;
+  border-bottom: 1px solid var(--babyBlue);
+  color: var(--principalBlue);
+  padding: 20px 16px 16px 30px;
+  position: relative;
+}
+
+.iconInput {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.iconInput img {
+  position: absolute;
+}
+
+.iconInput input {
+  flex: 1;
+}
+
+.footerLoginCreate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerLoginCreate h6 {
+  margin-bottom: 10px;
+}
+
+.infoMigraMe {
+  padding: 0 35px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.infoMigraMefeature {
+  flex: 1;
+  width: auto;
+  height: 243px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px var(--babyBlue);
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.infoMigraMeImg {
+  margin: 20px;
+}
+
+.infoMigraMeText {
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.marginBottom120 {
+  margin-bottom: 120px;
+}
+
+.slct-box {
+  border: none;
+  border-bottom: 1px solid var(--babyBlue);
+  color: var(--principalBlue);
+  padding: 20px 16px 16px 30px;
+  position: relative;
+  background: inherit;
+  width: 350px;
+}
+
+.txtAreaStyle {
+  outline: none;
+  border: 1px solid var(--babyBlue);
+  padding: 20px 16px 16px 30px;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.txtAreaStyle ::placeholder {
+  color: var(--babyBlue);
+}
+
+.iconInput1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.iconInput1 input {
+  flex: 1;
+}
+
+.iconInput1 img {
+  width: 20px;
+  position: absolute;
+}
+
+.secondarytextPost {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.iconInputBack {
+  width: 20px;
+  position: absolute;
+  padding-right: 13px;
+  padding-left: 35px;
+  align-items: center;
+}
+
+.secondHeader {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: fixed;
+}
+
+.imgSecondHeader {
+  width: 100%;
+}
+
+.formPost {
+  margin-bottom: 20px;
+}
+
+.menuFooter {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  background: var(--lightGrey);
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.avatarPost {
+  position: relative;
+  padding-right: 13px;
+  border-radius: 100%;
+  width: 50px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.avatarPost img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.txtAreaStylePosted {
+  outline: none;
+  border: none;
+  padding: 0px 16px 16px 30px;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.txtAreaStylePosted ::placeholder {
+  color: var(--babyBlue);
+}
+
+.actionButtonRegular.littleButton {
+  max-width: 127px;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.profilePicture {
+  max-width: 113px;
+  border-radius: 60px;
+}
+
+.profileTop {
+  display: flex;
+  padding-top: 100px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.profileTop h2 {
+  padding-left: 15px;
+}
+
+.profileButtons {
+  display: flex;
+}
+
+.separationLine {
+  background-color: var(--principalBlue);
+  height: 1.5px;
+  border-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.divSeparationLine {
+  margin-bottom: 20px;
+}
+
+.actionButtonRegularPost {
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  max-width: 268px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+}
+
+.avatarPostTemp {
+  position: relative;
+  padding-right: 11px;
+  border-radius: 100%;
+  width: 80px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.avatarPostTemp img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.avatarName {
+  margin: 0;
+  padding-left: 20px;
+  font-weight: normal;
+  color: var(--mustardYellow);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.actionButtonRegularPost.littleButton {
+  max-width: 150px;
+}
+
+.actionButtonRegularPost.littleButton img {
+  position: relative;
+  padding-right: 10px;
+}
+
+.mainWallPost {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px var(--babyBlue);
+  border-width: 100%;
+  margin-bottom: 20px;
+}
+
+.authorName {
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--principalBlue);
+}
+
+.postEventsDescrip {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: right;
+  color: var(--principalBlue);
+  cursor: pointer;
+}
+
+.postEventsEdit {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--principalBlue);
+}
+
+.txtStylePost {
+  outline: none;
+  padding: 20px 2px;
+  position: relative;
+  color: var(--principalBlue);
+  text-align: justify;
+}
+
+.txtAreaStylePost {
+  outline: none;
+  border: 1px solid var(--babyBlue);
+  padding: 2px 16px 16px 2px;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  color: var(--principalBlue);
+}
+
+.buttonsEditPost {
+  display: flex;
+}
+
+.containerCategories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.categoriesImg {
+  width: 100px;
+  height: 100px;
+}
+
+.btnCategories {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 160px;
+  background-color: #f1f1f1;
+  box-shadow: 5px 5px 15px 0px #c0bfbf;
+}
+
+.btnCategories a {
+  padding: 0px;
+  margin: 0px;
+}
+
+.categoryPost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerFeed {
+  padding-bottom: 100px;
+}
+
+.btnCategories p {
+  margin-top: 10px;
+  color: #2e71a7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.containerCategories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.categoriesImg {
+  width: 100px;
+  height: 100px;
+}
+
+.btnCategories {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 160px;
+  background-color: #f1f1f1;
+  box-shadow: 5px 5px 15px 0px #c0bfbf;
+}
+
+.btnCategories a {
+  padding: 0px;
+  margin: 0px;
+}
+
+.mainPost {
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerFeed {
+  padding-bottom: 100px;
+}
+
+.btnCategories p {
+  margin-top: 10px;
+  color: #2e71a7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.buttonsPost {
+  display: flex;
+  padding-bottom: 15px;
+  justify-content: space-between;
+}
+
+.mainPost {
+  padding: 0 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tittlePost {
+  padding-top: 80px;
+}
