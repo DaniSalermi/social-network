@@ -9,7 +9,6 @@ import { templateProfile } from "./assets/views/templateProfile.js";
 import { templateMenu } from "./assets/views/templateMenu.js";
 import { templateCategories } from "./assets/views/templateCategories.js";
 
-
 const changeRouter = hash => {
   if (hash === "#/home") {
     return showTemplate(hash);
@@ -39,11 +38,9 @@ const changeRouter = hash => {
     let template = "#/profile";
     return showTemplate(template);
   }
-  if (hash === "#/categories") {
-    return showTemplate(hash);
-  }
-  if (hash === "#/category") {
-    return showTemplate(hash);
+  if (hash.includes("#/categories")) {
+    let template = "#/categories";
+    return showTemplate(template);
   }
 };
 
