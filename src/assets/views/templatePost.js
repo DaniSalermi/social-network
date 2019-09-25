@@ -1,6 +1,10 @@
 //importar funcion que crea post
-import { createPost } from "../js/post.js";
-import { observer } from "./../js/auth.js";
+import {
+  createPost
+} from "../js/post.js";
+import {
+  observer
+} from "./../js/auth.js";
 
 // import { saveUserToDatabaseAfterLogin } from "./../js/auth.js";
 const containerFeedPost = document.getElementById("root2");

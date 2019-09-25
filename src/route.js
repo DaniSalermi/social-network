@@ -1,13 +1,33 @@
-import { templateLogin } from "./assets/views/templateLogin.js";
-import { templateCreate } from "./assets/views/templateCreate.js";
-import { templateFeed } from "./assets/views/templateFeed.js";
-import { templateResetPassword } from "./assets/views/templateResetPassword.js";
-import { templateSuccessCreate } from "./assets/views/templateSuccessCreate.js";
-import { templateHome } from "./assets/views/templateHome.js";
-import { templatePost } from "./assets/views/templatePost.js";
-import { templateProfile } from "./assets/views/templateProfile.js";
-import { templateMenu } from "./assets/views/templateMenu.js";
-import { templateCategories } from "./assets/views/templateCategories.js";
+import {
+  templateLogin
+} from "./assets/views/templateLogin.js";
+import {
+  templateCreate
+} from "./assets/views/templateCreate.js";
+import {
+  templateFeed
+} from "./assets/views/templateFeed.js";
+import {
+  templateResetPassword
+} from "./assets/views/templateResetPassword.js";
+import {
+  templateSuccessCreate
+} from "./assets/views/templateSuccessCreate.js";
+import {
+  templateHome
+} from "./assets/views/templateHome.js";
+import {
+  templatePost
+} from "./assets/views/templatePost.js";
+import {
+  templateProfile
+} from "./assets/views/templateProfile.js";
+import {
+  templateMenu
+} from "./assets/views/templateMenu.js";
+import {
+  templateCategories
+} from "./assets/views/templateCategories.js";
 
 const changeRouter = hash => {
   if (hash === "#/home") {

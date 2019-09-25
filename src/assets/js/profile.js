@@ -1,4 +1,7 @@
-import { events, likeEvent } from "./post.js";
+import {
+  events,
+  likeEvent
+} from "./post.js";
 let db = firebase.firestore();
 const containerProfilePost = document.getElementById("root2");
 

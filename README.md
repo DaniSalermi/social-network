@@ -1,6 +1,6 @@
 <a href="https://ibb.co/WyQrp9F"><img src="https://i.ibb.co/R01X4nP/migrame.png" alt="migrame" border="0"></a>
 
-[Para acceder a demo de app haz click aquí](https://social-network-72a7d.web.app/)
+[Para acceder a demo de app haz click aquí](https://dacoquima.github.io/SCL010-Social-Network/src/#/home)
 
 ---
 
