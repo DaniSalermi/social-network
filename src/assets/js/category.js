@@ -1,7 +1,4 @@
-import {
-  events,
-  likeEvent
-} from "./post.js";
+import { events, likeEvent } from "./post.js";
 
 const containerCategoryPost = document.getElementById("root2");
 
@@ -10,7 +7,7 @@ export const categoryChoose = category => {
   db.collection("posts")
     .where("category", "==", category)
     .get()
-    .then(function (querySnapshot) {
+    .then(function(querySnapshot) {
       let user = firebase.auth().currentUser;
       containerCategoryPost.innerHTML += `   
       <header class="secondHeader">
@@ -28,7 +25,7 @@ export const categoryChoose = category => {
       <a id="profileIcon" class="menuIcon" href="#/profile/${
         user ? user.email.split("@")[0] : ""
       }"><img src="assets/img/profileIcon.svg" alt="icono de perfil"/></a>`;
-      querySnapshot.forEach(function (doc) {
+      querySnapshot.forEach(function(doc) {
         containerCategoryPost.innerHTML += `
         <main id = "templateWall" class="mainLoginCreate">
                 <div class = "mainWallPost">
@@ -89,7 +86,7 @@ export const categoryChoose = category => {
         likeEvent(doc);
       });
     })
-    .catch(function (error) {
+    .catch(function(error) {
       console.log("Error getting documents: ", error);
     });
 };
